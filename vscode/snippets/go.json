@@ -1,10 +1,45 @@
 {
-	"err != nil":{
+	"Err != nil":{
 		"prefix": "nerr",
 		"body": [
 			"if err != nil{",
 			"\treturn nil, err",
 			"}"
 		]
-	}
+	},
+   "Main Function": {
+    "prefix": "main",
+    "body": [
+      "package main",
+      "",
+      "import (",
+      "    \"fmt\"",
+      ")",
+      "",
+      "func main() {",
+      "    fmt.Println(\"Hello, World!\")",
+      "}"
+    ],
+    "description": "Basic Go main function"
+  }, 
+
+  "Struct Definition": {
+    "prefix": "struct",
+    "body": [
+      "type ${1:StructName} struct {",
+      "    ${2:Field} ${3:string}",
+      "}"
+    ],
+    "description": "Define a struct"
+  },
+
+    "For Range Loop": {
+    "prefix": "forrange",
+    "body": [
+      "for ${1:index}, ${2:value} := range ${3:collection} {",
+      "    ${4:// do something}",
+      "}"
+    ],
+    "description": "For range loop"
+  }
 }
