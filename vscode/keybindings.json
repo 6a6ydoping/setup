@@ -1,0 +1,19 @@
+[
+    {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+w ctrl+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+    "key": "ctrl+'",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+},
+]

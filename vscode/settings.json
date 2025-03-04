@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.startupEditor": "none",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+        "before": ["g", "i"],
+        "commands": ["editor.action.revealDefinition"]
+        }
+    ]
+}
